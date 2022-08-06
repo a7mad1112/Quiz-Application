@@ -1,0 +1,122 @@
+[
+    {
+        "title": "CSS stands for -",
+        "answer_1": "Cascade style sheets",
+        "answer_2": "Color and style sheets",
+        "answer_3": "Cascading style sheets",
+        "answer_4": "None of the above",
+        "right_answer": "Cascading style sheets"
+    },
+    {
+        "title": "Which of the following is the correct syntax for referring the external style sheet?",
+        "answer_1": "<style src = example.css>",
+        "answer_2": "<style src = 'example.css' >",
+        "answer_3": "<stylesheet> example.css </stylesheet>",
+        "answer_4": "<link rel='stylesheet' type='text/css' href='example.css'>",
+        "right_answer": "<link rel='stylesheet' type='text/css' href='example.css'>"
+    },
+    {
+        "title": "The property in CSS used to change the background color of an element is -",
+        "answer_1": "bgcolor",
+        "answer_2": "color",
+        "answer_3": "background-color",
+        "answer_4": "All of the above",
+        "right_answer": "background-color"
+    },
+    {
+        "title": "The property in CSS used to change the text color of an element is -",
+        "answer_1": "bgcolor",
+        "answer_2": "color",
+        "answer_3": "background-color",
+        "answer_4": "All of the above",
+        "right_answer": "background-color"
+    },
+    {
+        "title": "The CSS property used to control the element's font-size is -",
+        "answer_1": "text-style",
+        "answer_2": "text-size",
+        "answer_3": "font-size",
+        "answer_4": "None of the above",
+        "right_answer": "font-size"
+    },
+    {
+        "title": "The HTML attribute used to define the inline styles is -",
+        "answer_1": "style",
+        "answer_2": "styles",
+        "answer_3": "class",
+        "answer_4": "None of the above",
+        "right_answer": "style"
+    },
+    {
+        "title": "The HTML tag used to define the internal stylesheet is -",
+        "answer_1": "<style>",
+        "answer_2": "style",
+        "answer_3": "<link>",
+        "answer_4": "<script>",
+        "right_answer": "<style>"
+    },
+    {
+        "title": "Which of the following CSS property is used to set the background image of an element?",
+        "answer_1": "background-attachment",
+        "answer_2": "background-image",
+        "answer_3": "background-color",
+        "answer_4": "None of the above",
+        "right_answer": "background-image"
+    },
+    {
+        "title": "Which of the following is the correct syntax to make the background-color of all paragraph elements to yellow?",
+        "answer_1": "p {background-color : yellow;}",
+        "answer_2": "p {background-color : #yellow;}",
+        "answer_3": "all {background-color : yellow;}",
+        "answer_4": "all p {background-color : #yellow;}",
+        "right_answer": "p {background-color : yellow;}"
+    },
+    {
+        "title": "Which of the following is the correct syntax to display the hyperlinks without any underline?",
+        "answer_1": "a {text-decoration : underline;}",
+        "answer_2": "a {decoration : no-underline;}",
+        "answer_3": "a {text-decoration : none;}",
+        "answer_4": "None of the above",
+        "right_answer": "a {text-decoration : none;}"
+    },
+    {
+        "title": "Which of the following property is used as the shorthand property for the padding properties?",
+        "answer_1": "padding-left",
+        "answer_2": "padding-right",
+        "answer_3": "padding",
+        "answer_4": "All of the above",
+        "right_answer": "padding"
+    },
+    {
+        "title": "The CSS property used to make the text bold is -",
+        "answer_1": "font-weight : bold",
+        "answer_2": "weight: bold",
+        "answer_3": "font: bold",
+        "answer_4": "style: bold",
+        "right_answer": "font-weight : bold"
+    },
+    {
+        "title": "Are the negative values allowed in padding property?",
+        "answer_1": "Yes",
+        "answer_2": "No",
+        "answer_3": "Can't say",
+        "answer_4": "May be",
+        "right_answer": "No"
+    },
+    {
+        "title": "Which of the following property is used as the shorthand property of margin properties?",
+        "answer_1": "margin-left",
+        "answer_2": "margin-right",
+        "answer_3": "margin",
+        "answer_4": "None of the above",
+        "right_answer": "margin"
+    },
+    {
+        "title": "The CSS property used to specify the transparency of an element is -",
+        "answer_1": "opacity",
+        "answer_2": "filter",
+        "answer_3": "visibility",
+        "answer_4": "overlay",
+        "right_answer": "opacity"
+    }
+]

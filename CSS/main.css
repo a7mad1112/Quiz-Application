@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Tahoma, Arial;
+}
+.quiz-app {
+    width: 700px;
+    margin: 20px auto;
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+.quiz-app .quiz-info {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.quiz-app .quiz-info .category {
+    flex: 1;
+}
+.quiz-app .quiz-info .category span {
+    color: #dc0a0a;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+.quiz-app .quiz-info .category span.subject {
+    cursor: pointer;
+}
+.quiz-app .quiz-info .count {
+    flex: 1;
+    text-align: right;
+}
+.quiz-app .quiz-area {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+}
+.quiz-app .quiz-area h2 {
+    margin: 0;
+}
+.quiz-app .answers-area {
+    background-color: #fff;
+    padding: 20px;
+}
+.quiz-app .answers-area .answer {
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+.quiz-app .answers-area .answer:not(:last-of-type) {
+    border-bottom: 1px solid #dfdfdf;
+}
+.quiz-app .answers-area .answer input[type="radio"]:checked + label {
+    color: #0075ff;
+}
+.quiz-app .answers-area .answer label {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+    color: #777;
+}
+.quiz-app .submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0075ff;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.quiz-app .submit-button:focus {
+    outline: none;
+}
+.quiz-app .bullets {
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+.quiz-app .bullets .spans {
+    flex: 1;
+    display: flex;
+}
+.quiz-app .bullets .spans span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 5px;
+}
+.quiz-app .bullets .spans span.on {
+    background-color: #0075ff;
+}
+.quiz-app .results span {
+    font-weight: bold;
+}
+.quiz-app .results span.bad {
+    color: #dc0a0a;
+}
+.quiz-app .results span.good {
+    color: #009688;
+}
+.quiz-app .results span.perfect {
+    color: #0075ff;
+}
+@media(max-width: 767px) {
+    .quiz-app {
+        width: 100%;
+    }
+    .quiz-app .quiz-info {
+        display: block;
+    }
+    .quiz-app .quiz-info .count {
+        text-align: left;
+        border-top: 1px solid #dfdfdf;
+        padding: 10px 0 0;
+    }
+    .quiz-app .quiz-area h2 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .quiz-app .bullets .spans span {
+        width: 15px;
+        height: 15px;
+    }
+}

@@ -1,0 +1,120 @@
+[
+    {
+        "title": "Which type of JavaScript language is ___",
+        "answer_1": "Object-Oriented",
+        "answer_2": "Object-Based",
+        "answer_3": "Assembly-language",
+        "answer_4": "High-level",
+        "right_answer": "Object-Based"
+    },
+    {
+        "title": "Which one of the following also known as Conditional Expression:",
+        "answer_1": "Alternative to if-else",
+        "answer_2": "Switch statement",
+        "answer_3": "If-then-else statement",
+        "answer_4": "immediate if",
+        "right_answer": "immediate if"
+    },
+    {
+        "title": "In JavaScript, what is a block of statement?",
+        "answer_1": "Conditional block",
+        "answer_2": "block that combines a number of statements into a single compound statement",
+        "answer_3": "both conditional block and a single statement",
+        "answer_4": "block that contains a single statement",
+        "right_answer": "block that combines a number of statements into a single compound statement"
+    },
+    {
+        "title": "When interpreter encounters an empty statements, what it will do:",
+        "answer_1": "Shows a warning",
+        "answer_2": "Prompts to complete the statement",
+        "answer_3": "Throws an error",
+        "answer_4": "Ignores the statements",
+        "right_answer": "Ignores the statements"
+    },{
+        "title": "The 'function' and 'var' are known as:",
+        "answer_1": "Keywords",
+        "answer_2": "Data types",
+        "answer_3": "Declaration statements",
+        "answer_4": "Prototypes",
+        "right_answer": "Declaration statements"
+    },{
+        "title": "Which of the following variables takes precedence over the others if the names are the same?",
+        "answer_1": "Global variable",
+        "answer_2": "The local element",
+        "answer_3": "The two of the above",
+        "answer_4": "None of the above",
+        "right_answer": "The local element"
+    },{
+        "title": "Which one of the following is the correct way for calling the JavaScript code?",
+        "answer_1": "Preprocessor",
+        "answer_2": "Triggering Event",
+        "answer_3": "RMI",
+        "answer_4": "Function/Method",
+        "right_answer": "Function/Method"
+    },{
+        "title": "Which of the following type of a variable is volatile?",
+        "answer_1": "Mutable variable",
+        "answer_2": "Dynamic variable",
+        "answer_3": "Volatile variable",
+        "answer_4": "Immutable variable",
+        "right_answer": "Mutable variable"
+    },
+    {
+        "title": "Which of the following option is used as hexadecimal literal beginning?",
+        "answer_1": "00",
+        "answer_2": "0x",
+        "answer_3": "0X",
+        "answer_4": "Both 0x and 0X",
+        "right_answer": "Both 0x and 0X"
+    },
+    {
+        "title": "In the JavaScript, which one of the following is not considered as an error:",
+        "answer_1": "Syntax error",
+        "answer_2": "Missing of semicolons",
+        "answer_3": "Division by zero",
+        "answer_4": "Missing of Bracket",
+        "right_answer": "Division by zero"
+    },
+    {
+        "title": "Which one of the following method or operator is used for identification of the array?",
+        "answer_1": "Typeof",
+        "answer_2": "==",
+        "answer_3": "===",
+        "answer_4": "isarrayType()",
+        "right_answer": "isarrayType()"
+    },
+    {
+        "title": "For which purpose the array 'map()' methods is used ?",
+        "answer_1": "It used for mapping the elements of another array into itself.",
+        "answer_2": "It passes each data-item of the array and returns the necessary mapped elements.",
+        "answer_3": "It passes the data-items of an array into another array.",
+        "answer_4": "It passes every element of the array on which it is invoked to the function you specify, and returns an array containing the values returned by that function.",
+        "right_answer": "It passes every element of the array on which it is invoked to the function you specify, and returns an array containing the values returned by that function."
+    },
+    {
+        "title": "Both the 'rduucedRight()' and 'reduce()' methods follow which one of the following common operation?",
+        "answer_1": "inject and fold",
+        "answer_2": "filter and fold",
+        "answer_3": "finger and fold",
+        "answer_4": "fold",
+        "right_answer": "inject and fold"
+    },
+    {
+        "title": "Which one of the following given task is performed by the 'pop()' method of the array?",
+        "answer_1": "Itupdates the element of the array",
+        "answer_2": "it increments the total length of the array by 1",
+        "answer_3": "It prints the first element and made no impact on the length of the array",
+        "answer_4": "updates the element removes one element of an array on each time the 'pop()' function called",
+        "right_answer": "updates the element removes one element of an array on each time the 'pop()' function called"
+    },
+    {
+        "title": "What will happen if we use the 'join()' method along with the 'reverse()' method?",
+        "answer_1": "It will reverse and concatenates the elements of the array",
+        "answer_2": "It will reverse the element and store the elements in the same array",
+        "answer_3": "It will just reverse the element of the array",
+        "answer_4": "It will store the elements of the specified array in the normal order",
+        "right_answer": "It will reverse the element and store the elements in the same array"
+    }
+]
+
+

@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Why We Use <br> Element",
+        "answer_1": "To Make Text Bold",
+        "answer_2": "To Make Text Italic",
+        "answer_3": "To Add Breakline",
+        "answer_4": "To Create Horizontal Line",
+        "right_answer": "To Add Breakline"
+    },
+    {
+        "title": "Is <img> Element Has Attribute href",
+        "answer_1": "Yes",
+        "answer_2": "No Its For Anchor Tag <a>",
+        "answer_3": "All Elements Has This Attribute",
+        "answer_4": "Answer 1 And 3 Is Right",
+        "right_answer": "No Its For Anchor Tag <a>"
+    },
+    {
+        "title": "How Can We Make Element Text Bold",
+        "answer_1": "Putting It Inside <b> Tag",
+        "answer_2": "Putting It Inside <strong> Tag",
+        "answer_3": "Customizing It With Font-Weight Property In CSS",
+        "answer_4": "All Answers Is Right",
+        "right_answer": "All Answers Is Right"
+    },
+    {
+        "title": "What Is The Right Hierarchy For Creating Part Of Page",
+        "answer_1": "<h2> Then <p> Then <h1> Then <p> Then <h3> Then <p> Then <img>",
+        "answer_2": "<h1> Then <p> Then <h3> Then <p> Then <h2> Then <p> Then <img>",
+        "answer_3": "<h2> Then <p> Then <h3> Then <p> Then <h1> Then <p> Then <img>",
+        "answer_4": "All Solutions Is Wrong",
+        "right_answer": "All Solutions Is Wrong"
+    },
+    {
+        "title": "How Can We Include External Page Inside Our HTML Page",
+        "answer_1": "By Using Include in HTML",
+        "answer_2": "By Using Load In HTML",
+        "answer_3": "By Using iFrame Tag",
+        "answer_4": "All Solutions Is Wrong",
+        "right_answer": "By Using iFrame Tag"
+    },
+    {
+        "title": "What Is The Tag That Not Exists in HTML",
+        "answer_1": "<object>",
+        "answer_2": "<basefont>",
+        "answer_3": "<abbr>",
+        "answer_4": "All Tags Is Exists in HTML",
+        "right_answer": "All Tags Is Exists in HTML"
+    },
+    {
+        "title": "How We Specify Document Type Of HTML5 Page",
+        "answer_1": "<DOCTYPE html>",
+        "answer_2": "<DOCTYPE html5>",
+        "answer_3": "<!DOCTYPE html5>",
+        "answer_4": "<!DOCTYPE html>",
+        "right_answer": "<!DOCTYPE html>"
+    },
+    {
+        "title": "What Is The Element Thats Not Exists in HTML5 Semantics",
+        "answer_1": "<article>",
+        "answer_2": "<section>",
+        "answer_3": "<blockquote>",
+        "answer_4": "<aside>",
+        "right_answer": "<blockquote>"
+    },
+    {
+        "title": "In HTML Can We Use This Way To Add Attributes",
+        "answer_1": "<div class='class-name'>",
+        "answer_2": "<div class=class-name>",
+        "answer_3": "<div class=\"class-name\">",
+        "answer_4": "All Is Right",
+        "right_answer": "All Is Right"
+    },
+    {
+        "title": "HTML stands for -",
+        "answer_1": "HighText Machine Language",
+        "answer_2": "HyperText and links Markup Language",
+        "answer_3": "HyperText Markup Language",
+        "answer_4": "None of these",
+        "right_answer": "HyperText Markup Language"
+    },
+    {
+        "title": "The correct sequence of HTML tags for starting a webpage is -",
+        "answer_1": "Head, Title, HTML, body",
+        "answer_2": "HTML, Body, Title, Head",
+        "answer_3": "HTML, Head, Body, Title",
+        "answer_4": "HTML, Head, Title, Body",
+        "right_answer": "HTML, Head, Title, Body"
+    },
+    {
+        "title": "Which character is used to represent the closing of a tag in HTML?",
+        "answer_1": "\\",
+        "answer_2": "!",
+        "answer_3": "/",
+        "answer_4": ".",
+        "right_answer": "/"
+    },
+    {
+        "title": "How to create a hyperlink in HTML?",
+        "answer_1": "<a href = 'www.javatpoint.com'> javaTpoint.com </a>",
+        "answer_2": "<a url = 'www.javatpoint.com' javaTpoint.com /a>",
+        "answer_3": "<a link = 'www.javatpoint.com'> javaTpoint.com </a>",
+        "answer_4": "<a> www.javatpoint.com <javaTpoint.com /a>",
+        "right_answer": "<a href = 'www.javatpoint.com'> javaTpoint.com </a>"
+    },
+    {
+        "title": "How to create an ordered list (a list with the list items in numbers) in HTML?",
+        "answer_1": "<ul>",
+        "answer_2": "<ol>",
+        "answer_3": "<li>",
+        "answer_4": "<i>",
+        "right_answer": "<ol>"
+    },
+    {
+        "title": "Which of the following element is responsible for making the text italic in HTML?",
+        "answer_1": "<i>",
+        "answer_2": "<italic>",
+        "answer_3": "<it>",
+        "answer_4": "<pre>",
+        "right_answer": "<i>"
+    }
+]
