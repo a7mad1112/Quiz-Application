@@ -18,14 +18,14 @@ let choosenSubject;
 // choose Subject
 mySubjects.forEach(function(ele){
 ele.onclick = function () {
-    choosenSubject = ele.getAttribute("rode");
+    choosenSubject = ele.getAttribute("jsonFile");
     getQuestions();
     document.querySelector(".category").style.display = "none";
 }
 });
 function getQuestions() {
     let myRequest = new XMLHttpRequest();
-    myRequest.open("GET", choosenSubject, true);
+    myRequest.open("GET", "/JS/html_questions.json", true);
     myRequest.send();
     myRequest.onreadystatechange = function () {
         if(this.readyState === 4 && this.status === 200) {
