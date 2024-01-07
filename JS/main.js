@@ -8,17 +8,19 @@ let answerArea = document.querySelector(".answers-area");
 let submit = document.querySelector(".quiz-app .submit-button");
 let resultContainer = document.querySelector(".results");
 let countdownElement = document.querySelector(".countdown");
-// let 
 // Set Options
-let currentIndex = 0;
-let countRightAnswer = 0;
 let countDownInterval;
-let numberOfQuestion = 10;
 let choosenSubject;
+let quizAppOptions = {
+    currentIndex: 0,
+    countRightAnswer: 0,
+    numberOfQuestion: 10,
+};
 // choose Subject
 mySubjects.forEach(function(ele){
 ele.onclick = function () {
-    choosenSubject = ele.getAttribute("jsonFile");
+    choosenSubject = ele.getAttribute("json-file");
+    quizArea.innerHTML = "";
     getQuestions();
     document.querySelector(".category").style.display = "none";
 }
@@ -32,18 +34,17 @@ function getQuestions() {
             let questionsObject = JSON.parse(this.responseText)
             let indexOfCurrentQuestion = getRandomNumber(0, 14);
             // Set Questions Count + Add Bullets
-            createBullets(numberOfQuestion);
+            createBullets(quizAppOptions.numberOfQuestion);
             // Add Questions Data
             addQuestionData(questionsObject[indexOfCurrentQuestion], questionsObject.length);
             // Count  Down
-            countdown(10, numberOfQuestion);
+            countdown(10, quizAppOptions.numberOfQuestion);
             // Click On Submit
             submit.onclick = () => {
                 // Get Right Answer
                 let rightAnswer = questionsObject[indexOfCurrentQuestion]['right_answer'];
-                currentIndex++;
+                quizAppOptions.currentIndex = quizAppOptions.currentIndex + 1;
                 indexOfCurrentQuestion = getRandomNumber(0, questionsObject.length - 1);
-                console.log(questionsObject.length);
                 // Check The Answer
                 checkAnswer(rightAnswer, questionsObject.length);
                 // Remove Previous Question
@@ -55,9 +56,9 @@ function getQuestions() {
                 handleBullets();
                 // Start Countdown
                 clearInterval(countDownInterval);
-                countdown(10, numberOfQuestion);
+                countdown(10, quizAppOptions.numberOfQuestion);
                 // Show Result
-                showResult(numberOfQuestion);
+                showResult(quizAppOptions.numberOfQuestion);
             };
         }
     };
@@ -73,7 +74,7 @@ function createBullets (num) {
     }
 };
 function addQuestionData(obj, count) {
-    if(currentIndex < count){
+    if(quizAppOptions.currentIndex < count){
         // Create h2 (Questions Title)
         let title = document.createElement("h2");
         title.innerText = obj.title;
@@ -108,32 +109,32 @@ function checkAnswer(rightAnswer, questionCount) {
         }// end condition
     }//end loop
     if(theChoosenAns === rightAnswer)
-    countRightAnswer++;
+    quizAppOptions.countRightAnswer = quizAppOptions.countRightAnswer + 1;
 };
 function handleBullets() {
     ////// -->
     let bulletsSpan = document.querySelectorAll(".bullets span");
     let arrayOfSpans = Array.from(bulletsSpan);
     arrayOfSpans.forEach((span, index) => {
-        if (index === currentIndex)
+        if (index === quizAppOptions.currentIndex)
         span.className = "on";
     });
 };
 function showResult (qcount) {
     // The Questions Done Then Show The Result
     let result;
-    if(currentIndex === qcount) {
+    if(quizAppOptions.currentIndex === qcount) {
         quizArea.remove();
         answerArea.remove();
         submit.remove();
         bullets.remove();
         // Show Result
-        if (countRightAnswer > (qcount / 2) && countRightAnswer < qcount) 
-            result = `<span class="good">Good</span>, ${countRightAnswer} From ${qcount} Is Good`;
-        else if (countRightAnswer === qcount)
+        if (quizAppOptions.countRightAnswer > (qcount / 2) && quizAppOptions.countRightAnswer < qcount) 
+            result = `<span class="good">Good</span>, ${quizAppOptions.countRightAnswer} From ${qcount} Is Good`;
+        else if (quizAppOptions.countRightAnswer === qcount)
             result = `<span class="perfect">perfect</span>, All Answers Is Good`;
         else 
-        result = `<span class="bad">Bad</span>, ${countRightAnswer} From ${qcount}`;
+        result = `<span class="bad">Bad</span>, ${quizAppOptions.countRightAnswer} From ${qcount}`;
         resultContainer.innerHTML = result;
         resultContainer.style.padding = "10px";
         resultContainer.style.backgroundColor = "white";
@@ -141,7 +142,7 @@ function showResult (qcount) {
     }
 };
 function countdown(duration, qcount) {
-    if(currentIndex < qcount) {
+    if(quizAppOptions.currentIndex < qcount) {
         let minutes, seconds;
         countDownInterval = setInterval(function () {
             minutes = parseInt(duration / 60);
@@ -162,5 +163,3 @@ function getRandomNumber(min, max) {
     let result = Math.floor(step2) + min;
     return result;
 }
-
-//Done

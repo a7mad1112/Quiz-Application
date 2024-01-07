@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="./images/exam.png" />
 </head>
+
 <body>
-    <div class="quiz-app">
+    <main class="quiz-app">
         <div class="quiz-info">
             <div class="category">
-                Category: 
-                <span class="subject" jsonFile="JS/html_questions.json">HTML</span> | 
-                <span class="subject" jsonFile="JS/css_questions.json">CSS</span> | 
-                <span class="subject" jsonFile="JS/js_questions.json">JS</span>
+                Category:
+                <span class="subject" json-file="js/html_questions.json">HTML</span> |
+                <span class="subject" json-file="js/css_questions.json">CSS</span> |
+                <span class="subject" json-file="js/js_questions.json">JS</span>
                 <br><span>?!</span> Please Choose Language To Start The Exam
             </div>
             <div class="count">Questions Count: <span></span></div>
         </div>
         <div class="quiz-area">
             <!-- <h2>Why We Use &lt;br&gt; Element</h2> -->
+            <p>Please choose one category to start your quiz</p>
         </div>
         <div class="answers-area">
             <!-- <div class="answer">
@@ -62,7 +66,8 @@
         <div class="results">
             <!-- <span class="Perfect">Perfect</span> You Answered 10 From 10 -->
         </div>
-    </div>
-    <script src="JS/main.js"></script>
+    </main>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
